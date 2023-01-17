@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- минималка валидной таблицы <table> - контейнер <tr> - строка в таблице  -->
+    <table style="border: 1px solid black;">
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- строка в таблице -->
+    <table style="border: 1px solid black;">
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+                <td style="border: 1px solid black;">Back-end</td>
+                <td style="border: 1px solid black;">Full-stack</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- таблица в виде колонны  -->
+    <table style="border: 1px solid black;">
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Back-end</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Full-stack</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- простой пример таблицы -->
+    <table style="border: 1px solid black;">
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+                <td style="border: 1px solid black;">4 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Back-end</td>
+                <td style="border: 1px solid black;">2 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Full-stack</td>
+                <td style="border: 1px solid black;">1 person</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- таблица с заголовком тег <caption>  -->
+    <table style="border: 1px solid black;">
+        <caption style="border: 1px solid black;">Team members list</caption>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+                <td style="border: 1px solid black;">4 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Back-end</td>
+                <td style="border: 1px solid black;">2 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Full-stack</td>
+                <td style="border: 1px solid black;">1 person</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- таблица с симантикой, порядок важен (<thead> - используется 1 раз! <tbody> - основной контент и <tfoot> - используется 1 раз! ) -->
+    <table style="border: 1px solid black;">
+        <caption style="border: 1px solid black;">Team members list</caption>
+        <thead>
+            <tr>
+                <td style="border: 1px solid black;">Speciality</td>
+                <td style="border: 1px solid black;">Quantity</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+                <td style="border: 1px solid black;">4 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Back-end</td>
+                <td style="border: 1px solid black;">2 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Full-stack</td>
+                <td style="border: 1px solid black;">1 person</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="border: 1px solid black;"></td>
+                <td style="border: 1px solid black;">7</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- выделить заголовки в таблице (вместо <td> исп. <th>), а так же объядинить ячейки (colspan="кол. ячеек" & rowspan="" - тож самое только вертикально)-->
+    <table style="border: 1px solid black;">
+        <caption style="border: 1px solid black;">Team members list</caption>
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Speciality</th>
+                <th style="border: 1px solid black;">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Front-end</td>
+                <td style="border: 1px solid black;">4 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Back-end</td>
+                <td style="border: 1px solid black;">2 persons</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Full-stack</td>
+                <td style="border: 1px solid black;">1 person</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="border: 1px solid black; text-align: end;">7per.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

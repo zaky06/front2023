@@ -1,0 +1,13 @@
+span, div {
+    border: 1px solid red;
+}
+
+/*  
+    свойство display позволяет изменить тип (строчный/блочный или строчно-блочный)
+    inline-делает элемент строчным
+    так же на строчные элементы не применяется margin-top и margin-botom
+*/
+
+.test {
+    display: inline;
+}

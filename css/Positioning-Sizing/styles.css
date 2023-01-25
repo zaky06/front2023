@@ -1,0 +1,98 @@
+/* 
+    width - ширина (без трансформации)
+    height - длинна (без трансформации)
+    min-width: 100px; - говорит о том, что элемент может уменьшаться до 100px 
+    меньше 100 он быть не может,
+    max-width: 100px; - что больше 100px он быть не может
+*/
+
+
+body {
+    height: 1000px;
+}
+
+h4 {
+    border: 1px solid black;
+}
+
+/* 
+    свойство position - static стоит по умолчанию
+    relative - относительное позиционирование (элемент формирует новый поток + теперь положением
+    элемента можно управлять (top right bottom left) )
+
+*/
+
+.test1 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+/* 
+    absolute - основной поток теряет связь с элементом, его место заполняется 
+    теперь отступать 20px он будет не от края блока (h4), а от окна браузера
+    если остальные элементы статичны (position static)
+*/
+
+.test2 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 
+    relative - элемент будет позиционироваться от края заголовка в котором он находится
+*/
+
+.test3 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+/* 
+    fixed - аналог абслоютого позиционирования, только позиция всегда
+    отсчитываться от окна браузера  
+*/
+
+.test4 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: fixed;
+    top: 500px;
+    left: 20px;
+}
+
+/* 
+    sticky - редко используется, мало браузеров поддерживают данную технологию
+    будет смещаться в границах родителя
+*/
+
+.test5 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+}

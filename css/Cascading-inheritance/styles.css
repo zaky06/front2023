@@ -1,0 +1,13 @@
+body {
+    color: red;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+/* если написать inherit то стиль будет наследоваться (применяется редко, но знать надо) */
+p {
+    border: inherit;
+    margin: inherit;
+}
+
+/* normalize reset важная тема! */

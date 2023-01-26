@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+    своства background-size:
+    contain - сохраняет свои пропорции и подстраивается под высоту или ширину экрана
+    cover - ширина и высота изображения соответствует ширине и высоте элемента
+
+    background-repeat: no-repeat - тут все понятно
+
+    background-position x/y - примеры (right bottom, left top; если по центру то center center;
+    а так же % по типу 50% 50%)
+
+    background-attachment: fixed; - картинка всегда будет видна (вместе со скролом)
+*/
+
+/* 
+    если хочу добавить одну картинку на другую, то первая указанная будет находиться выше,
+    а последующая за ней, смотри ниже в примере
+*/
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+
+    /* background-image: url(https://picsum.photos/1610/539);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    background-size: contain;
+    background: url(https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png)
+        center no-repeat,
+        url(https://picsum.photos/1200/) no-repeat;
+    
+}

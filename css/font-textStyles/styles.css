@@ -1,0 +1,26 @@
+/* 
+    font-family - свойство которое позволяет устанавливать шрифты
+    основные типы шрифтов можно разделить на 2 типа, с засечками и без 
+    с засечками - serif | без засечек - sans-serif
+    допустим на компе нету указанного шрифта, возьмется другой такого-же типа 
+*/
+
+
+
+/* 
+    для подключения шрифта локально, используется директива @font-face
+    font-family - указываем название шрифта
+    src: url() указываем путь до файла и формат
+*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Roboto/Roboto-Regular.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}

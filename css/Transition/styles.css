@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* transition-property - позволяет применить плавную анимацию к конкретному случаю
+   (допустим менять цвет за 1 секунду, а размер за 2 секунды) 
+   посмотри как через запитую прописаны время и что надо анимировать
+   выходит 500ms - transform | 2s - background-color
+
+   transition-delay - это задержка, как ты видишь для transorm  у меня стоит 0,
+   а для background-color 500ms
+
+   transition-timing-function - загугли там много вариантов
+*/
+
+.wrapper {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aqua;
+    transition-duration: 500ms, 2s;
+    transition-property: transform, background-color;
+    transition-delay: 0, 500ms;
+    transition-timing-function: linear;
+}
+
+.wrapper:hover {
+    background-color: red;
+    transform: scale(1.2);
+}

@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aqua;
+    /* animation-name: myAnim;
+    animation-duration: 5s; - длительность анимации
+    animation-timing-function: linear; */
+    /* animation-iteration-count: infinite; - количество повторений, можно бесконечно */ 
+    /* animation-direction: alternate-reverse; - направление анимации*/
+    /* animation-fill-mode: forwards повзоляет оставить элемент таким, каким он стал в конце анимации;
+    animation-delay: 3s; задержка анимации */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; - все сверху разом */
+    animation: myAnim 5s linear 3s infinite;
+}
+
+.wrapper:hover {
+    /* стопать анимацию при наводке */
+    animation-play-state: paused;
+}
+
+@keyframes myAnim {
+    from {
+        background-color: aqua;
+    }
+
+    50% {
+        background-color: red;
+        transform: scale(1.2);
+    }
+
+    to {
+        background-color: blue;
+    }
+}

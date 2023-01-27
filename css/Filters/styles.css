@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    transition: all 1s ease;
+}
+
+img:hover {
+    filter: blur(2px);
+    /* filter: drop-shadow(5px 5px 5px black); - накладывает тени */ 
+    /* filter: grayscale(40%); - обесцвечивает */
+    /* filter: brightness(150%); - выцвечивает (норма 100%) */
+    /* filter: contrast(150%); - контраст (норма 100%) */
+    /* filter: hue-rotate(180deg); - наложение оттенка определенного цвета (от 0 до 360) */
+    /* filter: invert(100%); - как негатив */
+    /* filter: saturate(165%); - насыщенность (от 100%) */
+    /* filter: sepia(50%); - делает фотку старой (от 0 до 100) */
+    /* filter: opacity(50%); - делает прозрачным */
+}

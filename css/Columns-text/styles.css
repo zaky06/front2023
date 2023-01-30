@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* column-count - разбивает текст на колонки, в данном случае на 3 */
+
+.container {
+    column-count: 3;
+    column-rule: 1px solid black;
+    column-width: 300px;
+    column-gap: 100px;
+}

@@ -1,6 +1,10 @@
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: min-content 1fr minmax(100px, 300px);
+    grid-column-gap: 10px;
+    /* так же можно указать min-content, max-content, minmax(100px, 300px) */
+    /* сделать колонки одинаковые repeat(3, 1fr) - то есть 3 колонки по 1fr */
+    /* что бы добавить расстояние между колонками grid-columns-gap  */
 }
 
 

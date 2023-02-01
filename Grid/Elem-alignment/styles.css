@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    border: 1px solid black;
+    /* свойства которые применяютя к грид-контейнеру */
+    align-items: center;
+    justify-items: center;
+}
+
+.elem1 {
+    background-color: blue;
+    font-size: 40px;
+    color: wheat;
+    /* свойства которые применяются к грид-элементу */
+    /* align-self: center (start, end); - выравнивание по горизонтали  */
+    /* justify-self: center (start, end); - выравнивание по вертикали  */
+}
